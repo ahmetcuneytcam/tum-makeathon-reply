@@ -45,7 +45,7 @@ def get_transform(train):
 
 # Load COCO-style dataset
 train_dataset = CocoDetectionWrapper(
-    root='./labeled_barcode_images/makeathon-reply.v1i.coco/train',          # Path to train images folder
+    root='./labeled_barcode_images/makeathon-reply.v1i.coco/train',
     annFile='./labeled_barcode_images/makeathon-reply.v1i.coco/train/_annotations.coco.json',
     transform=get_transform(train=True)
 )
