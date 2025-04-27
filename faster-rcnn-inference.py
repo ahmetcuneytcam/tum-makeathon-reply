@@ -25,7 +25,8 @@ model.load_state_dict(torch.load("fine_tuned_faster-rcnn.pth"))
 model.eval()
 
 # Load and preprocess an image
-image_path = "./labeled_barcode_images/makeathon-reply.v1i.coco/train/DJI_20250424192953_0006_V_jpeg.rf.7916275dd582bb114e88af95cc4bf2af.jpg"
+#image_path = "./labeled_barcode_images/makeathon-reply.v1i.coco/train/DJI_20250424192953_0006_V_jpeg.rf.7916275dd582bb114e88af95cc4bf2af.jpg"
+image_path = "./some_test_images/DJI_20250424162351_0130_V.jpeg"
 image = Image.open(image_path).convert("RGB")
 img_tensor = F.to_tensor(image).to(device)
 
