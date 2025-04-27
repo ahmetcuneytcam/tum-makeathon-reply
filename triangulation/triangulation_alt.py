@@ -169,16 +169,16 @@ def triangulate_from_images(img1_path, img2_path, px1, py1, px2, py2, fov_deg=73
 # Example usage:
 if __name__ == '__main__':
     ex = triangulate_from_images(
-        './DJI_20250424192953_0006_V.jpeg',
-        './DJI_20250424193037_0036_V.jpeg',
+        './Images_with_barcodes/DJI_20250424192953_0006_V.jpeg',
+        './Images_with_barcodes/DJI_20250424193037_0036_V.jpeg',
         1850, 215, 3000, 2000
     )
     print(f"lat={ex[0]:.8f}, lon={ex[1]:.8f}")
 
-    ex = triangulate_from_images(
+    """ ex = triangulate_from_images(
         './some_test_images/DJI_20250424162345_0123_V.jpeg',
         './some_test_images/DJI_20250424162350_0128_V.jpeg',
         1772, 246, 1621, 234
     )
 
-    print(f"lat={ex[0]:.8f}, lon={ex[1]:.8f}")
+    print(f"lat={ex[0]:.8f}, lon={ex[1]:.8f}") """

@@ -131,9 +131,10 @@ def triangulate_from_images(img1, img2, px1=None, px2=None):
     return lat, lon, alt
 
 lat, lon, alt = triangulate_from_images(
-    './DJI_20250424192953_0006_V.jpeg',
-    './DJI_20250424193037_0036_V.jpeg',
+    './Images_with_barcodes/DJI_20250424192953_0006_V.jpeg',
+    './Images_with_barcodes/DJI_20250424193037_0036_V.jpeg',
     px1=(1485, 205),
     px2=(3000, 207)
  )
+
 print(f"Latitude: {lat:.8f}\nLongitude: {lon:.8f}\nAltitude: {alt:.3f} m")
