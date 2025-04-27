@@ -129,7 +129,6 @@ def triangulate_from_images(img1_path, img2_path, px1, py1, px2, py2, fov_deg=73
     d_cam1 = camera_direction_vector(px1, py1, w1, h1, fov_deg)
     d_cam2 = camera_direction_vector(px2, py2, w2, h2, fov_deg)
 
-    # ✨ New: Only keep the X, Y part — we project onto the EN plane
     d2d_1 = d_cam1[:2] / np.linalg.norm(d_cam1[:2])
     d2d_2 = d_cam2[:2] / np.linalg.norm(d_cam2[:2])
 
